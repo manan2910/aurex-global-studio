@@ -3,8 +3,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const stats = [
-  { value: "150+", label: "Projects Built" },
-  { value: "12+", label: "Industries Served" },
+  { value: "2+", label: "Projects Built" },
   { value: "7–14", label: "Days Avg Delivery" },
   { value: "98%", label: "Client Satisfaction" },
 ];
