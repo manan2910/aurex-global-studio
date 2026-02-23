@@ -40,7 +40,7 @@ const Footer = () => {
                 <Phone size={14} /> +91 8860509005
               </a>
               <a href="mailto:hello@aurex.agency" className="flex items-center gap-2 hover:text-primary transition-colors">
-                <Mail size={14} /> hello@aurex.agency
+                <Mail size={14} /> web.forge2930@gmail.com
               </a>
               <div className="flex items-center gap-2">
                 <MapPin size={14} className="text-primary" /> Remote Global Agency
