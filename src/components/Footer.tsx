@@ -7,7 +7,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <span className="font-display text-2xl font-bold text-primary tracking-wider">AUREX</span>
+            <div className="flex items-center">
+              <img src="/logo.png" alt="Aurex Logo" className="h-20 md:h-24 w-auto object-contain" />
+            </div>
             <p className="text-muted-foreground text-sm mt-4 leading-relaxed">
               Premium web design & development agency. We build high-converting websites that turn visitors into customers.
             </p>

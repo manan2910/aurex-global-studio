@@ -7,8 +7,10 @@ import WhyChooseSection from "@/components/WhyChooseSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import GlobalClientsSection from "@/components/GlobalClientsSection";
 import CTASection from "@/components/CTASection";
+import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import InstagramButton from "@/components/InstagramButton";
 
 const Index = () => {
   return (
@@ -20,9 +22,11 @@ const Index = () => {
       <PortfolioSection />
       <WhyChooseSection />
       <TestimonialsSection />
+      <FAQSection />
       <GlobalClientsSection />
       <CTASection />
       <Footer />
+      <InstagramButton />
       <WhatsAppButton />
     </div>
   );

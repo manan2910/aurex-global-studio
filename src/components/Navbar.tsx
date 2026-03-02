@@ -26,13 +26,12 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border/50" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border/50" : "bg-transparent"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-20">
-        <a href="#" className="font-display text-2xl font-bold tracking-wider text-primary">
-          AUREX
+        <a href="#" className="flex items-center transition-opacity hover:opacity-80">
+          <img src="/logo.png" alt="Aurex Logo" className="h-24 md:h-32 w-auto object-contain" />
         </a>
 
         {/* Desktop */}

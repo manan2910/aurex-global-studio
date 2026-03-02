@@ -22,7 +22,7 @@ const GlobalClientsSection = () => {
             Serving Clients <span className="text-gradient-gold">Worldwide</span> 🌎
           </h2>
           <p className="text-muted-foreground text-lg mb-12">
-            From startups in Silicon Valley to real estate firms in Dubai — we deliver premium web solutions globally.
+            From startups in Silicon Valley to real estate firms in WorldWide — we deliver premium web solutions globally.
           </p>
         </motion.div>
 
