@@ -34,12 +34,27 @@ export default function CanvasRenderer({ images }: { images: HTMLImageElement[] 
             let offsetX = 0;
             let offsetY = 0;
 
-            if (canvasRatio > imgRatio) {
-                drawHeight = canvas.width / imgRatio;
+            const isMobile = window.innerWidth < 768; // Check if it's a mobile viewport
+
+            if (isMobile) {
+                // For phones (like iPhone 14) which are tall and narrow, we MUST fit the image completely to the width.
+                // We'll calculate the height based on the image's native aspect ratio so it doesn't compress or stretch.
+                drawWidth = canvas.width;
+                drawHeight = drawWidth / imgRatio;
+
+                // Center the image vertically
+                offsetX = 0;
                 offsetY = (canvas.height - drawHeight) / 2;
+
             } else {
-                drawWidth = canvas.height * imgRatio;
-                offsetX = (canvas.width - drawWidth) / 2;
+                // On desktop, keep the "cover" logic ensuring no black bars
+                if (canvasRatio > imgRatio) {
+                    drawHeight = canvas.width / imgRatio;
+                    offsetY = (canvas.height - drawHeight) / 2;
+                } else {
+                    drawWidth = canvas.height * imgRatio;
+                    offsetX = (canvas.width - drawWidth) / 2;
+                }
             }
 
             ctx.fillStyle = '#050505';
