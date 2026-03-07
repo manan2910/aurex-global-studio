@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ArrowRight, Phone, MessageCircle } from "lucide-react";
+import { ArrowRight, Phone, MessageCircle, Instagram, Linkedin } from "lucide-react";
 
 const CTASection = () => {
   const ref = useRef(null);
@@ -38,13 +38,18 @@ const CTASection = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10"
         >
           <Button variant="gold" size="xl" asChild>
-            <a href="https://calendly.com" target="_blank" rel="noopener noreferrer">
-              Book Free Strategy Call <ArrowRight className="ml-1" />
+            <a href="https://www.linkedin.com/in/aurex-2032903a8/" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="mr-2" size={20} /> Connect on LinkedIn
             </a>
           </Button>
           <Button variant="gold-outline" size="lg" asChild>
+            <a href="https://www.instagram.com/aurex._in/" target="_blank" rel="noopener noreferrer">
+              <Instagram className="mr-2" size={20} /> Follow on Instagram
+            </a>
+          </Button>
+          <Button variant="outline" size="lg" className="border-white/10 text-white hover:bg-white/5" asChild>
             <a href="https://wa.me/918851454740" target="_blank" rel="noopener noreferrer">
-              <MessageCircle size={18} /> WhatsApp Us
+              <MessageCircle className="mr-2" size={18} /> WhatsApp Us
             </a>
           </Button>
         </motion.div>

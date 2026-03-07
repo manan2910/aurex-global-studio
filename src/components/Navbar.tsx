@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram, Linkedin } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -45,9 +45,14 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <Button variant="gold" size="sm" asChild>
-            <a href="#contact">Book a Call</a>
-          </Button>
+          <div className="flex items-center gap-4 border-l border-border/50 pl-8">
+            <a href="https://www.instagram.com/aurex._in/" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <Instagram size={20} />
+            </a>
+            <a href="https://www.linkedin.com/in/aurex-2032903a8/" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <Linkedin size={20} />
+            </a>
+          </div>
         </div>
 
         {/* Mobile toggle */}
@@ -79,9 +84,14 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="gold" size="sm" asChild>
-                <a href="#contact">Book a Call</a>
-              </Button>
+              <div className="flex items-center gap-6 pt-4 border-t border-border/50">
+                <a href="https://www.instagram.com/aurex._in/" target="_blank" rel="noreferrer" className="text-primary hover:text-primary/80 transition-colors">
+                  <Instagram size={24} />
+                </a>
+                <a href="https://www.linkedin.com/in/aurex-2032903a8/" target="_blank" rel="noreferrer" className="text-primary hover:text-primary/80 transition-colors">
+                  <Linkedin size={24} />
+                </a>
+              </div>
             </div>
           </motion.div>
         )}
