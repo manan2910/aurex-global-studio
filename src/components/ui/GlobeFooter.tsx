@@ -14,10 +14,10 @@ export default function GlobeFooter() {
                     Ready to build the future?
                 </h2>
                 <a
-                    href="mailto:contact@aurex.com"
+                    href="mailto:web.forge2930@gmail.com"
                     className="px-8 py-4 rounded-full bg-white text-[#050505] font-medium tracking-wide hover:bg-[#D4A73C] hover:text-white transition-all duration-300"
                 >
-                    Contact Aurex
+                    Connect with Aurex
                 </a>
             </div>
         </footer>

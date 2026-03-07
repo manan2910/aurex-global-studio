@@ -5,7 +5,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
 export const metadata: Metadata = {
-    title: 'Aurex Global Studio',
+    title: 'Aurex',
     description: 'Turning Ideas Into Visual Experiences',
     icons: {
         icon: '/logo.png',
