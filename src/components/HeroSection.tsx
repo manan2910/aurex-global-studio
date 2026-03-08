@@ -3,15 +3,19 @@ import { motion } from "framer-motion";
 import { ArrowRight, Zap, Clock, Target, Globe } from "lucide-react";
 
 const trustItems = [
-  { icon: Zap, label: "Modern Design" },
-  { icon: Clock, label: "Fast Delivery" },
+  { icon: Zap, label: "Fast 7–14 Day Delivery" },
+  { icon: Clock, label: "24/7 Support" },
   { icon: Target, label: "Conversion Focused" },
-  { icon: Globe, label: "International Clients" },
+  { icon: Globe, label: "Serving Global Clients" },
 ];
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      aria-label="Aurex — Premium Web Design Agency"
+    >
       {/* Background effects */}
       <div className="absolute inset-0 hero-glow" />
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[120px] animate-glow-pulse" />
@@ -78,29 +82,23 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <span className="inline-block px-4 py-1.5 rounded-full border border-primary/30 text-primary text-sm font-medium mb-8 bg-primary/5">
-            Designing Websites That Close Clients.
+            🌍 Trusted by Startups & Global Brands Worldwide
           </span>
         </motion.div>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
+        <h1
           className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-balance"
         >
-          We Build Websites That{" "}
-          <span className="text-gradient-gold">Print Clients</span>{" "}
-          & Revenue
-        </motion.h1>
+          Premium Web Design &{" "}
+          <span className="text-gradient-gold">Development Agency</span>{" "}
+          for Global Brands
+        </h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+        <p
           className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 text-balance"
         >
-          Aurex is a premium web design & development agency building high-converting websites for real estate, eCommerce, SaaS and global brands.
-        </motion.p>
+          Aurex is a premium web design &amp; development agency building high-converting <strong>landing pages</strong>, <strong>eCommerce websites</strong>, <strong>SaaS platforms</strong>, and <strong>real estate websites</strong> for ambitious founders and global brands.
+        </p>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
